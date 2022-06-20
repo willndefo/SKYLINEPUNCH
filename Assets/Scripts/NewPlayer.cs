@@ -7,16 +7,18 @@ public class NewPlayer : PhysicsObject
     [SerializeField] private float maxSpeed = 1;
     [SerializeField] private float jumpPower = 10;
 
+    public int coinsCollected;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        coinsCollected = 200;
     }
 
     // Update is called once per frame
     void Update()
     {
-        targetVelocity = new Vector2(Input.GetAxis("Horizontal"), 0) * maxSpeed;
+        targetVelocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, 0);
 
         // If the player jump
         if (Input.GetButtonDown("Jump") && grounded)
