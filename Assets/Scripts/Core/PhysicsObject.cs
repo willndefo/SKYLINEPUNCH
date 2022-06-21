@@ -1,10 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PhysicsObject : MonoBehaviour
 {
 
+    [Header("Physics Object Attributes")]
     public float minGroundNormalY = .65f;
     public float gravityModifier = 1f;
 
@@ -72,10 +73,11 @@ public class PhysicsObject : MonoBehaviour
         {
             int count = rb2d.Cast(move, contactFilter, hitBuffer, distance + shellRadius);
             hitBufferList.Clear();
+
             for (int i = 0; i < count; i++)
             {
                 PlatformEffector2D platform = hitBuffer[i].collider.GetComponent<PlatformEffector2D>();
-                if(!platform || (hitBuffer[i].normal == Vector2.up && velocity.y < 0 && yMovement))
+                if (!platform || (hitBuffer[i].normal == Vector2.up && velocity.y < 0 && yMovement))
                 {
                     hitBufferList.Add(hitBuffer[i]);
                 }
@@ -103,7 +105,6 @@ public class PhysicsObject : MonoBehaviour
                 float modifiedDistance = hitBufferList[i].distance - shellRadius;
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
             }
-
 
         }
 
