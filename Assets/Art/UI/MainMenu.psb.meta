@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df634c7c1c2ec1d4a970ffb50ac308e9
+guid: aa057222b487b4133ae971380fe1018b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
       y: 4340
       width: 1792
       height: 1397
-    spriteID: 14ae4583224daa04d8c157bb51ccaefd
+    spriteID: 185049f44e8274f54a8bf68988878039
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -124,7 +124,7 @@ ScriptedImporter:
       y: 4
       width: 3840
       height: 2160
-    spriteID: 6f281551ac6c1e443a4fbe1d71a842db
+    spriteID: 5fa96a11d7b504d67a53e7a0ce847f7a
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -146,7 +146,7 @@ ScriptedImporter:
       y: 2172
       width: 3840
       height: 2160
-    spriteID: adf258e8db34f124fbbd10001de20194
+    spriteID: 5a2cf06c2aca9495aa4aa80413a3cdcb
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -180,21 +180,21 @@ ScriptedImporter:
     spriteName: Logo
     isGroup: 0
     parentIndex: -1
-    spriteID: 14ae4583224daa04d8c157bb51ccaefd
+    spriteID: 185049f44e8274f54a8bf68988878039
     layerID: 7
     mosaicPosition: {x: 4, y: 4340}
   - name: Background
     spriteName: Background
     isGroup: 0
     parentIndex: -1
-    spriteID: 6f281551ac6c1e443a4fbe1d71a842db
+    spriteID: 5fa96a11d7b504d67a53e7a0ce847f7a
     layerID: 4
     mosaicPosition: {x: 4, y: 4}
   - name: Background
     spriteName: Background_1
     isGroup: 0
     parentIndex: -1
-    spriteID: adf258e8db34f124fbbd10001de20194
+    spriteID: 5a2cf06c2aca9495aa4aa80413a3cdcb
     layerID: 1
     mosaicPosition: {x: 4, y: 2172}
   characterData:
